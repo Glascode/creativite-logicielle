@@ -1,0 +1,29 @@
+---
+layout: default
+title: Upload
+permalink: /similar
+---
+
+<div class="p-3">
+    <a href="/">Acceuil</a>
+
+    <h2 class="mb-2">Résultats</h2>
+
+    <form class="form-inline mb-4">
+        <input class="form-control" placeholder="Rechercher">
+    </form>
+
+    {% for item in site.data.similars %}
+    <a class="card flex-row mb-2">
+        <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <h6 class="card-subtitle text-muted">
+                {{ item.price }}
+            </h6>
+        </div>
+        <div class="card-image-container">
+            <img class="card-image" src="/images/man.jpg">
+        </div>
+    </a>
+    {% endfor %}
+</div>
