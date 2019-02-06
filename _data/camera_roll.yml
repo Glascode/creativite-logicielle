@@ -1,0 +1,29 @@
+- url: 'blue_shirt.jpg'
+  target:
+    label: 'Chemise'
+    top: '35%'
+    left: '60%'
+
+- url: 'gray_shirt.jpg'
+  target:
+    label: 'Chemise'
+    top: '55%'
+    left: '35%'
+
+- url: 'green_shirt.jpg'
+  target:
+      label: 'Chemise'
+      top: '70%'
+      left: '65%'
+
+- url: 'green_tshirt.jpg'
+  target:
+      label: 'T-Shirt'
+      top: '60%'
+      left: '50%'
+
+- url: 'jeans_jacket.jpg'
+  target:
+      label: 'Veste'
+      top: '50%'
+      left: '40%'

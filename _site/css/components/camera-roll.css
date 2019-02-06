@@ -1,0 +1,31 @@
+.picture-preview-container {
+    position: relative; /* for the target to be positioned */
+    width: fit-content;
+}
+
+.camera-roll {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    border-top: 1px solid #fff;
+}
+
+.cr-thumbnail-container {
+    position: relative;
+    background-color: #fff;
+}
+
+.cr-thumbnail-container::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.cr-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

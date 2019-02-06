@@ -1,60 +1,63 @@
-.button-plus {
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+    font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.status-bar {
+    position: sticky;
+    top: 0;
+    line-height: 1;
+    background-color: #fff;
+}
+
+.status-bar,
+.status-bar i {
+    font-size: 14px;
+}
+
+.actions-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #aaa;
+}
+
+.btn-add {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100px;
     height: 100px;
-    font-size: 3rem;
-    line-height: 1;
-    color: #fff;
-    background-color: var(--blue);
+    border: 2px solid currentColor;
     border-radius: 50%;
+    transition: box-shadow .15s;
 }
 
-.button-plus span {
-    transform: translateY(-2px);
+.btn-add:hover {
+    text-decoration: none;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, .25);
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3px;
-}
-
-.gallery-item {
-    padding-top: 100%;
-    background-color: #9caab6;
-    background-image: url('/images/man.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.btn-add i {
+    font-size: 3rem;
 }
 
 img {
     max-width: 100%;
 }
 
-.upload-image-container {
-    position: relative;
-}
-
-.shirt-target {
-    position: absolute;
-    top: 45%;
-    left: 35%;
-    width: 20px;
-    height: 20px;
-    background-color: #b45252;
-    border-radius: 50%;
-}
-
-.shirt-target::after {
-    content: 'Chemise';
-    display: inline-block;
-    padding-left: 30px;
-    vertical-align: text-bottom;
-    color: #b45252;
-}
-
 .card-image {
-    width: 75px;
+    width: 89px;
+}
+
+input {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+input:focus {
+    outline: 0;
 }

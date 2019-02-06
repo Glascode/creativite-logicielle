@@ -6,26 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
 
-    <!-- Open Graph -->
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:alt" content="">
-
-    <title>Clothes</title>
+    <title>
+        
+        Clothes -
+        
+        Clothes
+    </title>
 
     <link rel="icon" type="image/png" href="">
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-          crossorigin="anonymous">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 
     <!-- Custom style -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 
     
+    <!-- Specific page style -->
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     
 </head>
@@ -33,18 +31,35 @@
 
 <body>
 <div class="master">
-    <header class="header"></header>
+    <header class="status-bar d-flex justify-content-between p-2">
+    <div class="status-time">
+        12:30
+    </div>
+    <div class="status-info d-flex">
+        <i class="material-icons">network_wifi</i>
+        <i class="material-icons ml-1">network_cell</i>
+        <i class="material-icons ml-1">battery_full</i>
+    </div>
+</header>
 
 
     <main class="content">
-        <a class="button-plus" href="/add">
-    <span>+</span>
-</a>
+        <div class="actions-header">
+    <a class="text-body text-decoration-none" href="#">Découvrir</a>
+    <a class="text-body text-decoration-none" href="/results">Mes recherches</a>
+</div>
+
+<div class="center">
+    <a class="btn-add text-body" href="/add">
+        <i class="material-icons">add</i>
+    </a>
+</div>
 
     </main>
 </div>
 
 <footer class="footer"></footer>
+
 
 
 

@@ -6,21 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
 
-    <!-- Open Graph -->
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:alt" content="">
-
-    <title>Clothes</title>
+    <title>
+        
+        Ajouter -
+        
+        Clothes
+    </title>
 
     <link rel="icon" type="image/png" href="">
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-          crossorigin="anonymous">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 
     <!-- Custom style -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -31,35 +28,91 @@
 
 <body>
 <div class="master">
-    <header class="header"></header>
+    <header class="status-bar d-flex justify-content-between p-2">
+    <div class="status-time">
+        12:30
+    </div>
+    <div class="status-info d-flex">
+        <i class="material-icons">network_wifi</i>
+        <i class="material-icons ml-1">network_cell</i>
+        <i class="material-icons ml-1">battery_full</i>
+    </div>
+</header>
 
 
     <main class="content">
-        <h2 class="m-3">Galerie d'images</h2>
+        <style>
+    .status-bar {
+        display: none !important;
+    }
+</style>
 
-<div class="d-flex align-items-center m-3">
-    <i class="fas fa-angle-left"></i>
-    <form>
-        <input class="form-control ml-3" placeholder="Search">
-    </form>
+<div class="actions-header">
+    <a class="text-body text-decoration-none" href="/">Annuler</a>
+    <a class="text-decoration-none" href="/results">Suivant</a>
 </div>
 
-<div class="gallery">
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
+<div class="picture-preview-container">
+    <img class="picture-preview-img js-pp-img" src="/images/blue_shirt.jpg">
+    <a class="target text-decoration-none" href="/results"
+       data-label="Chemise"
+       data-top="35%"
+       data-left="60%"></a>
 </div>
+
+<div class="camera-roll">
+    
+    <div class="cr-thumbnail-container">
+        <img class="cr-thumbnail js-cr-thumbnail"
+             src="/images/blue_shirt.jpg"
+             data-target-label="Chemise"
+             data-target-top="35%"
+             data-target-left="60%">
+    </div>
+    
+    <div class="cr-thumbnail-container">
+        <img class="cr-thumbnail js-cr-thumbnail"
+             src="/images/gray_shirt.jpg"
+             data-target-label="Chemise"
+             data-target-top="55%"
+             data-target-left="35%">
+    </div>
+    
+    <div class="cr-thumbnail-container">
+        <img class="cr-thumbnail js-cr-thumbnail"
+             src="/images/green_shirt.jpg"
+             data-target-label="Chemise"
+             data-target-top="70%"
+             data-target-left="65%">
+    </div>
+    
+    <div class="cr-thumbnail-container">
+        <img class="cr-thumbnail js-cr-thumbnail"
+             src="/images/green_tshirt.jpg"
+             data-target-label="T-Shirt"
+             data-target-top="60%"
+             data-target-left="50%">
+    </div>
+    
+    <div class="cr-thumbnail-container">
+        <img class="cr-thumbnail js-cr-thumbnail"
+             src="/images/jeans_jacket.jpg"
+             data-target-label="Veste"
+             data-target-top="50%"
+             data-target-left="40%">
+    </div>
+    
+</div>
+
     </main>
 </div>
 
 <footer class="footer"></footer>
 
+
+
+<!-- Specific page script -->
+<script src="/js/camera_roll.js"></script>
 
 
 </body>

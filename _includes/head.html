@@ -4,26 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
 
-    <!-- Open Graph -->
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:alt" content="">
-
-    <title>{{ site.title }}</title>
+    <title>
+        {% if page.title %}
+        {{ page.title }} -
+        {% endif %}
+        {{ site.title }}
+    </title>
 
     <link rel="icon" type="image/png" href="">
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-          crossorigin="anonymous">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 
     <!-- Custom style -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 
     {% if page.style %}
-    <link rel="stylesheet" type="text/css" href="/css/{{ page.style }}">
+    <!-- Specific page style -->
+    <link rel="stylesheet" type="text/css" href="/css/{{ page.style }}.css">
     {% endif %}
 </head>

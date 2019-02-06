@@ -1,26 +1,37 @@
 ---
 layout: default
-title: Add
+title: Ajouter
 permalink: /add
+script: camera_roll
 ---
 
-<h2 class="m-3">Galerie d'images</h2>
+<style>
+    .status-bar {
+        display: none !important;
+    }
+</style>
 
-<div class="d-flex align-items-center m-3">
-    <i class="fas fa-angle-left"></i>
-    <form>
-        <input class="form-control ml-3" placeholder="Search">
-    </form>
+<div class="actions-header">
+    <a class="text-body text-decoration-none" href="/">Annuler</a>
+    <a class="text-decoration-none" href="/results">Suivant</a>
 </div>
 
-<div class="gallery">
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
-    <a class="gallery-item" href="/upload"></a>
+<div class="picture-preview-container">
+    <img class="picture-preview-img js-pp-img" src="/images/blue_shirt.jpg">
+    <a class="target text-decoration-none" href="/results"
+       data-label="{{ site.data.camera_roll[0].target.label }}"
+       data-top="{{ site.data.camera_roll[0].target.top }}"
+       data-left="{{ site.data.camera_roll[0].target.left }}"></a>
+</div>
+
+<div class="camera-roll">
+    {% for picture in site.data.camera_roll %}
+    <div class="cr-thumbnail-container">
+        <img class="cr-thumbnail js-cr-thumbnail"
+             src="/images/{{ picture.url }}"
+             data-target-label="{{ picture.target.label }}"
+             data-target-top="{{ picture.target.top }}"
+             data-target-left="{{ picture.target.left }}">
+    </div>
+    {% endfor %}
 </div>
