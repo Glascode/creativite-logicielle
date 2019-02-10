@@ -19,6 +19,7 @@ function main() {
     thumbnails.forEach(function (thumbnail) {
         thumbnail.addEventListener('click', changePreview);
     });
+
 }
 
 window.onload = main();
