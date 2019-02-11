@@ -22,7 +22,7 @@ permalink: /recent
 
 <div class="gallery-item-container mb-4">
     <img class="gallery-item"
-         src="/images/blue_shirt.jpg">
+         src="{{ site.baseurl }}/images/blue_shirt.jpg">
 </div>
 
 <h4 class="mx-3 mb-3">Recherches récentes</h4>
@@ -31,7 +31,7 @@ permalink: /recent
     {% for picture in site.data.gallery %}
     <div class="gallery-item-container">
         <img class="gallery-item js-gallery-item"
-             src="/images/{{ picture.url }}"
+             src="{{ site.baseurl }}/images/{{ picture.url }}"
              data-target-label="{{ picture.target.label }}"
              data-target-top="{{ picture.target.top }}"
              data-target-left="{{ picture.target.left }}">

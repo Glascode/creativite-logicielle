@@ -65,8 +65,30 @@ img {
     max-width: 100%;
 }
 
+.card {
+    border-radius: .5rem;
+}
+
+.card-image-container {
+    position: relative;
+    width: 116px;
+}
+
+.card-image-container::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
 .card-image {
-    width: 89px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: .44rem;
+    border-bottom-right-radius: .44rem;
 }
 
 input {

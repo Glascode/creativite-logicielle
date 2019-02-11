@@ -8,26 +8,26 @@ permalink: /discover
     <!-- Invisible so the element has the same width as the one ont he right: -->
     <span class="invisible">Accueil</span>
     <h5 class="m-0">Découvrir</h5>
-    <a class="text-decoration-none" href="/">Accueil</a>
+    <a class="text-decoration-none" href="{{ site.baseurl }}/">Accueil</a>
 </div>
 
-<form class="form-inline mb-4"
-      style="border-bottom: 1px solid #eee">
-    <input class="p-3 border-0 w-100" placeholder="Rechercher un vêtement">
+<form class="form-inline mb-4" style="border-bottom: 1px solid #eee">
+    <input class="p-3 border-0 w-100"
+           placeholder="Rechercher un vêtement ou une marque">
 </form>
 
 <div class="p-3">
-
-    {% for item in site.data.results %}
+    {% for item in site.data.discover %}
     <a class="card flex-row mb-2">
         <div class="card-body">
-            <h5 class="card-title">{{ item.title }}</h5>
-            <h6 class="card-subtitle text-muted">
+            <h5 class="card-title mb-1">{{ item.title }}</h5>
+            <p class="small mb-3 font-weight-normal text-uppercase text-muted">{{ item.brand }}</p>
+            <h6 class="card-subtitle font-weight-normal">
                 {{ item.price }} €
             </h6>
         </div>
         <div class="card-image-container">
-            <img class="card-image" src="/images/blue_shirt.jpg">
+            <img class="card-image" src="{{ site.baseurl }}/images/{{ item.image }}">
         </div>
     </a>
     {% endfor %}

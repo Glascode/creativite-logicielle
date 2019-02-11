@@ -11,17 +11,17 @@
         {{ site.title }}
     </title>
 
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
 
     <!-- Material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
 
     <!-- Custom style -->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css">
 
     {% if page.style %}
     <!-- Specific page style -->
-    <link rel="stylesheet" type="text/css" href="/css/{{ page.style }}.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/{{ page.style }}.css">
     {% endif %}
 </head>

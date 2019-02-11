@@ -22,7 +22,7 @@
       top: '60%'
       left: '50%'
 
-- url: 'jeans_jacket.jpg'
+- url: 'denim_jacket.jpg'
   target:
       label: 'Veste'
       top: '50%'

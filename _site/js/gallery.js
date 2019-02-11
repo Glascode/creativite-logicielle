@@ -8,7 +8,7 @@ function changePreview() {
 }
 
 function main() {
-    
+
     /* Initialises the target */
     let target = document.querySelector('.target');
     target.style.top = target.getAttribute('data-top');

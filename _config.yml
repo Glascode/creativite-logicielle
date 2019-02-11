@@ -1,7 +1,7 @@
 # Site settings
 title: "Clothes"
 description: ""
-baseurl: ""
+baseurl: "/snapshot"
 url: "http://localhost:4000"  # absolute url
 
 # Build settings

@@ -6,14 +6,14 @@ script: gallery
 ---
 
 <div class="actions-header">
-    <a class="text-decoration-none text-body" href="/">Annuler</a>
+    <a class="text-decoration-none text-body" href="{{ site.baseurl }}/">Annuler</a>
     <h5 class="m-0">Ajouter</h5>
-    <a class="text-decoration-none active" href="/results">Suivant</a>
+    <a class="text-decoration-none active" href="{{ site.baseurl }}/results">Suivant</a>
 </div>
 
 <div class="picture-preview-container">
-    <img class="picture-preview-img js-pp-img" src="/images/blue_shirt.jpg">
-    <a class="target text-decoration-none" href="/results"
+    <img class="picture-preview-img js-pp-img" src="{{ site.baseurl }}/images/blue_shirt.jpg">
+    <a class="target text-decoration-none" href="{{ site.baseurl }}/results"
        data-label="{{ site.data.camera_roll[0].target.label }}"
        data-top="{{ site.data.camera_roll[0].target.top }}"
        data-left="{{ site.data.camera_roll[0].target.left }}"></a>
@@ -23,7 +23,7 @@ script: gallery
     {% for picture in site.data.gallery %}
     <div class="gallery-item-container">
         <img class="gallery-item js-gallery-item"
-             src="/images/{{ picture.url }}"
+             src="{{ site.baseurl }}/images/{{ picture.url }}"
              data-target-label="{{ picture.target.label }}"
              data-target-top="{{ picture.target.top }}"
              data-target-left="{{ picture.target.left }}">
