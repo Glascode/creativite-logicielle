@@ -15,7 +15,7 @@ function main() {
     target.style.left = target.getAttribute('data-left');
 
     /* Make each thumbnail clickable to change the preview accordingly*/
-    let thumbnails = document.querySelectorAll('.js-cr-thumbnail');
+    let thumbnails = document.querySelectorAll('.js-gallery-item');
     thumbnails.forEach(function (thumbnail) {
         thumbnail.addEventListener('click', changePreview);
     });

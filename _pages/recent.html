@@ -1,0 +1,40 @@
+---
+layout: default
+title: Recherches récentes
+permalink: /recent
+---
+
+<div class="actions-header">
+    <button class="material-icons text-body text-decoration-none"
+            onclick="window.history.back()">
+        arrow_back
+    </button>
+    <h5 class="m-0">Mes recherches</h5>
+    <a class="text-decoration-none active" href="/">Accueil</a>
+</div>
+
+<form class="form-inline mb-4"
+      style="border-bottom: 1px solid #eee">
+    <input class="p-3 border-0 w-100" placeholder="Rechercher dans l'historique">
+</form>
+
+<h4 class="mx-3 mb-3">Dernière recherche</h4>
+
+<div class="gallery-item-container mb-4">
+    <img class="gallery-item"
+         src="/images/blue_shirt.jpg">
+</div>
+
+<h4 class="mx-3 mb-3">Recherches récentes</h4>
+
+<div class="gallery">
+    {% for picture in site.data.gallery %}
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="/images/{{ picture.url }}"
+             data-target-label="{{ picture.target.label }}"
+             data-target-top="{{ picture.target.top }}"
+             data-target-left="{{ picture.target.left }}">
+    </div>
+    {% endfor %}
+</div>

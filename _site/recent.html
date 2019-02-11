@@ -8,7 +8,7 @@
 
     <title>
         
-        Ajouter -
+        Recherches récentes -
         
         Clothes
     </title>
@@ -42,18 +42,27 @@
 
     <main class="content">
         <div class="actions-header">
-    <a class="text-decoration-none text-body" href="/">Annuler</a>
-    <h5 class="m-0">Ajouter</h5>
-    <a class="text-decoration-none active" href="/results">Suivant</a>
+    <button class="material-icons text-body text-decoration-none"
+            onclick="window.history.back()">
+        arrow_back
+    </button>
+    <h5 class="m-0">Mes recherches</h5>
+    <a class="text-decoration-none active" href="/">Accueil</a>
 </div>
 
-<div class="picture-preview-container">
-    <img class="picture-preview-img js-pp-img" src="/images/blue_shirt.jpg">
-    <a class="target text-decoration-none" href="/results"
-       data-label=""
-       data-top=""
-       data-left=""></a>
+<form class="form-inline mb-4"
+      style="border-bottom: 1px solid #eee">
+    <input class="p-3 border-0 w-100" placeholder="Rechercher dans l'historique">
+</form>
+
+<h4 class="mx-3 mb-3">Dernière recherche</h4>
+
+<div class="gallery-item-container mb-4">
+    <img class="gallery-item"
+         src="/images/blue_shirt.jpg">
 </div>
+
+<h4 class="mx-3 mb-3">Recherches récentes</h4>
 
 <div class="gallery">
     
@@ -105,9 +114,6 @@
 <footer class="footer"></footer>
 
 
-
-<!-- Specific page script -->
-<script src="/js/gallery.js"></script>
 
 
 </body>

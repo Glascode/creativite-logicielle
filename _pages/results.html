@@ -9,23 +9,22 @@ permalink: /results
             onclick="window.history.back()">
         arrow_back
     </button>
+    <h5 class="m-0">Recherche</h5>
     <a class="text-decoration-none active" href="/">Accueil</a>
 </div>
 
-<form class="form-inline mb-4"
+<form class="form-inline mb-1"
       style="border-bottom: 1px solid #eee">
     <input class="p-3 border-0 w-100" placeholder="Rechercher">
 </form>
 
 <div class="p-3">
 
-    <h2 class="mb-2">Résultats</h2>
-
     {% for item in site.data.results %}
     <a class="card flex-row mb-2">
         <div class="card-body">
             <h5 class="card-title">{{ item.title }}</h5>
-            <h6 class="card-subtitle text-muted">
+            <h6 class="card-subtitle font-weight-normal">
                 {{ item.price }} €
             </h6>
         </div>
