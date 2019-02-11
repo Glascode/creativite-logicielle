@@ -1,5 +1,5 @@
 # Site settings
-title: "Clothes"
+title: "Snapshot"
 description: ""
 baseurl: "/snapshot"
 url: "http://localhost:4000"  # absolute url
