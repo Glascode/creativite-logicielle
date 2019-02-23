@@ -2,21 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Make the app standalone -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-    <title>
-        
-        Découvrir -
-        
-        Snapshot
-    </title>
+    <title>Découvrir - DressApp</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/dressapp/webmanifest.json">
 
     <link rel="icon" type="image/png"
           href="/dressapp/images/favicon.png">
@@ -35,7 +30,7 @@
 
 <body ontouchstart="">
 <div class="master">
-    <header class="status-bar d-flex justify-content-between p-2">
+    <!--<div class="status-bar d-flex justify-content-between p-2">
     <div class="status-time">
         12:30
     </div>
@@ -44,8 +39,9 @@
         <i class="material-icons ml-1">network_cell</i>
         <i class="material-icons ml-1">battery_full</i>
     </div>
-</header>
-
+</div>
+-->
+    <header class="header"></header>
 
     <main class="content">
         <div class="actions-header">
@@ -132,7 +128,32 @@
     </main>
 </div>
 
-<footer class="footer"></footer>
+<div class="tab-bar">
+    <div class="d-flex justify-content-between">
+        
+        
+        
+        <a class="tab-item" href="/dressapp/uploads">
+            <i class="material-icons tab-icon">photo_library</i>
+            <div class="tab-caption">Mes photos</div>
+        </a>
+        
+        
+        
+        <a class="tab-item" href="/dressapp/">
+            <i class="material-icons tab-icon">search</i>
+            <div class="tab-caption">Découvrir</div>
+        </a>
+        
+        
+        
+        <a class="tab-item" href="/dressapp/favourites">
+            <i class="material-icons tab-icon">favorite_border</i>
+            <div class="tab-caption">Favoris</div>
+        </a>
+        
+    </div>
+</div>
 
 
 

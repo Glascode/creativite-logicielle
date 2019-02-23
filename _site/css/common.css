@@ -6,6 +6,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
     -webkit-tap-highlight-color: transparent; /* disable tap highlighting */
     -webkit-touch-callout: none; /* disable callouts */
+    padding-bottom: 100px; /* tab-bar height */
 }
 
 button {
@@ -15,7 +16,7 @@ button {
 }
 
 .status-bar {
-    display: none !important;
+    /*display: none !important;*/
     position: sticky;
     top: 0;
     line-height: 1;
@@ -99,4 +100,28 @@ input {
 
 input:focus {
     outline: 0;
+}
+
+.tab-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 1rem 2rem 2rem;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-icon {
+    margin-bottom: .5rem;
+}
+
+.tab-caption {
+    font-size: .8rem;
 }

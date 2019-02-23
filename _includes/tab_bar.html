@@ -1,0 +1,14 @@
+<div class="tab-bar">
+    <div class="d-flex justify-content-between">
+        {% for tab in site.data.tabs %}
+        {% assign class = "" %}
+        {% if tab.id == page.tab %}
+        {% assign class = " active" %}
+        {% endif %}
+        <a class="tab-item{{ class }}" href="{{ site.baseurl }}{{ tab.url }}">
+            <i class="material-icons tab-icon">{{ tab.icon }}</i>
+            <div class="tab-caption">{{ tab.title }}</div>
+        </a>
+        {% endfor %}
+    </div>
+</div>

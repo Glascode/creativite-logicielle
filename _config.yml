@@ -1,6 +1,5 @@
 # Site settings
-title: "Dressapp"
-description: ""
+title: "DressApp"
 baseurl: "/dressapp"
 url: "http://localhost:4000"  # absolute url
 
