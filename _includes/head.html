@@ -3,16 +3,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+    <link rel="apple-touch-startup-image" href="images/launch.png">
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="{{ site.baseurl }}/webmanifest.json">
 
     <link rel="icon" type="image/png"
-          href="{{ site.baseurl }}/images/favicon.png">
+          href="images/favicon.png">
 
     <!-- Material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"

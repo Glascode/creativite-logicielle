@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Ajouter - DressApp</title>
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
-    <title>Ajouter - DressApp</title>
+    <link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+    <link rel="apple-touch-startup-image" href="images/launch.png">
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/dressapp/webmanifest.json">
 
     <link rel="icon" type="image/png"
-          href="/dressapp/images/favicon.png">
+          href="images/favicon.png">
 
     <!-- Material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -41,14 +43,14 @@
     </div>
 </div>
 -->
-    <header class="header"></header>
+    
 
     <main class="content">
-        <div class="actions-header">
+        <header class="header">
     <a class="text-decoration-none text-body" href="/dressapp/">Annuler</a>
     <h5 class="m-0">Ajouter</h5>
     <a class="text-decoration-none active" href="/dressapp/results">Suivant</a>
-</div>
+</header>
 
 <div class="picture-preview-container">
     <img class="picture-preview-img js-pp-img" src="/dressapp/images/blue_shirt.jpg">
@@ -111,8 +113,15 @@
         
         
         <a class="tab-item" href="/dressapp/uploads">
-            <i class="material-icons tab-icon">photo_library</i>
+            <i class="material-icons tab-icon">image</i>
             <div class="tab-caption">Mes photos</div>
+        </a>
+        
+        
+        
+        <a class="tab-item" href="/dressapp/upload">
+            <i class="material-icons tab-icon">add_box</i>
+            <div class="tab-caption">Ajouter</div>
         </a>
         
         
@@ -120,13 +129,6 @@
         <a class="tab-item" href="/dressapp/">
             <i class="material-icons tab-icon">search</i>
             <div class="tab-caption">Découvrir</div>
-        </a>
-        
-        
-        
-        <a class="tab-item" href="/dressapp/favourites">
-            <i class="material-icons tab-icon">favorite_border</i>
-            <div class="tab-caption">Favoris</div>
         </a>
         
     </div>

@@ -1,3 +1,7 @@
+:root {
+    --primary: #24b4a5;
+}
+
 html {
     font-size: 16px;
 }
@@ -28,13 +32,17 @@ button {
     font-size: 15px;
 }
 
-.actions-header {
+.header {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
     font-size: 1.1rem;
+    background-color: #fff;
     border-bottom: 1px solid #aaa;
+    z-index: 10;
 }
 
 a.active {
@@ -102,11 +110,13 @@ input:focus {
     outline: 0;
 }
 
+/* Tab bar */
+
 .tab-bar {
     position: fixed;
     left: 0;
     bottom: 0;
-    padding: 1rem 2rem 2rem;
+    padding: .8rem 2rem 2rem;
     width: 100%;
     border-top: 1px solid #ddd;
     background-color: #fff;
@@ -118,10 +128,21 @@ input:focus {
     align-items: center;
 }
 
+.tab-item, .tab-item:hover {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.tab-item.active {
+    font-weight: 400;
+    color: var(--primary);
+}
+
 .tab-icon {
-    margin-bottom: .5rem;
+    font-size: 1.8rem;
+    margin-bottom: .2rem;
 }
 
 .tab-caption {
-    font-size: .8rem;
+    font-size: .7rem;
 }

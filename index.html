@@ -4,13 +4,19 @@ style: index
 tab: discover
 ---
 
-<div class="actions-header">
+<div class="header">
     <a class="text-decoration-none text-body" href="{{ site.baseurl }}/discover">Découvrir</a>
     <a class="text-decoration-none text-body" href="{{ site.baseurl }}/recent">Mes recherches</a>
 </div>
 
-<div class="center">
-    <a class="btn-add text-body" href="{{ site.baseurl }}/add">
-        <i class="material-icons">add</i>
-    </a>
+<div class="gallery g-col-2">
+    {% for picture in site.data.gallery %}
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="{{ site.baseurl }}/images/{{ picture.url }}"
+             data-target-label="{{ picture.target.label }}"
+             data-target-top="{{ picture.target.top }}"
+             data-target-left="{{ picture.target.left }}">
+    </div>
+    {% endfor %}
 </div>

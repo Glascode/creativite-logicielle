@@ -8,9 +8,13 @@
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1px;
     border-top: 1px solid #fff;
+}
+
+.gallery.g-col-2 {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .gallery-item-container {

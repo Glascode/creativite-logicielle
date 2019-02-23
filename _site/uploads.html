@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Recherches récentes - DressApp</title>
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
-    <title>Recherches récentes - DressApp</title>
+    <link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+    <link rel="apple-touch-startup-image" href="images/launch.png">
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/dressapp/webmanifest.json">
 
     <link rel="icon" type="image/png"
-          href="/dressapp/images/favicon.png">
+          href="images/favicon.png">
 
     <!-- Material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -41,10 +43,10 @@
     </div>
 </div>
 -->
-    <header class="header"></header>
+    
 
     <main class="content">
-        <div class="actions-header">
+        <header class="header">
     <button class="material-icons text-body text-decoration-none"
             onclick="window.history.back()">
         arrow_back
@@ -52,7 +54,7 @@
     <h5 class="m-0">Mes recherches</h5>
     <a class="text-decoration-none active"
        href="/dressapp/">Accueil</a>
-</div>
+</header>
 
 <form class="form-inline mb-4"
       style="border-bottom: 1px solid #eee">
@@ -121,9 +123,16 @@
         
         
         
-        <a class="tab-item" href="/dressapp/uploads">
-            <i class="material-icons tab-icon">photo_library</i>
+        <a class="tab-item active" href="/dressapp/uploads">
+            <i class="material-icons tab-icon">image</i>
             <div class="tab-caption">Mes photos</div>
+        </a>
+        
+        
+        
+        <a class="tab-item" href="/dressapp/upload">
+            <i class="material-icons tab-icon">add_box</i>
+            <div class="tab-caption">Ajouter</div>
         </a>
         
         
@@ -131,13 +140,6 @@
         <a class="tab-item" href="/dressapp/">
             <i class="material-icons tab-icon">search</i>
             <div class="tab-caption">Découvrir</div>
-        </a>
-        
-        
-        
-        <a class="tab-item" href="/dressapp/favourites">
-            <i class="material-icons tab-icon">favorite_border</i>
-            <div class="tab-caption">Favoris</div>
         </a>
         
     </div>
