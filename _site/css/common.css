@@ -4,6 +4,8 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent; /* disable tap highlighting */
+    -webkit-touch-callout: none; /* disable callouts */
 }
 
 button {
