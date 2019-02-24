@@ -1,0 +1,18 @@
+---
+layout: default
+title: Découvrir
+permalink: /discover
+tab: discover
+---
+
+<div class="gallery g-col-2">
+    {% for picture in site.data.gallery %}
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="{{ site.baseurl }}/images/{{ picture.url }}"
+             data-target-label="{{ picture.target.label }}"
+             data-target-top="{{ picture.target.top }}"
+             data-target-left="{{ picture.target.left }}">
+    </div>
+    {% endfor %}
+</div>

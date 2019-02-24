@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ajouter - DressApp</title>
+    <title>Découvrir - DressApp</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -27,10 +27,6 @@
           href="/dressapp/css/main.css">
 
     
-    <!-- Specific page style -->
-    <link rel="stylesheet" type="text/css"
-          href="/dressapp/css/index.css">
-    
 </head>
 
 
@@ -39,21 +35,55 @@
     
     <div class="header-item"></div>
     
-    <h5 class="header-item m-0 flex-grow-1">Ajouter</h5>
+    <h5 class="header-item m-0 flex-grow-1">Découvrir</h5>
     <div class="header-item"></div>
 </header>
 
 
 <main class="content">
-    <style>
-    .center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 90vh;
-        min-height: 300px;
-    }
-</style>
+    <div class="gallery g-col-2">
+    
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="/dressapp/images/blue_shirt.jpg"
+             data-target-label="Chemise"
+             data-target-top="35%"
+             data-target-left="60%">
+    </div>
+    
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="/dressapp/images/gray_shirt.jpg"
+             data-target-label="Chemise"
+             data-target-top="55%"
+             data-target-left="35%">
+    </div>
+    
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="/dressapp/images/green_shirt.jpg"
+             data-target-label="Chemise"
+             data-target-top="70%"
+             data-target-left="65%">
+    </div>
+    
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="/dressapp/images/green_tshirt.jpg"
+             data-target-label="T-Shirt"
+             data-target-top="60%"
+             data-target-left="50%">
+    </div>
+    
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="/dressapp/images/denim_jacket.jpg"
+             data-target-label="Veste"
+             data-target-top="50%"
+             data-target-left="40%">
+    </div>
+    
+</div>
 
 </main>
 
@@ -69,14 +99,14 @@
         
         
         
-        <a class="tab-item active" href="/dressapp/">
+        <a class="tab-item" href="/dressapp/">
             <i class="material-icons tab-icon">add_box</i>
             <div class="tab-caption">Ajouter</div>
         </a>
         
         
         
-        <a class="tab-item" href="/dressapp/discover">
+        <a class="tab-item active" href="/dressapp/discover">
             <i class="material-icons tab-icon">search</i>
             <div class="tab-caption">Découvrir</div>
         </a>
