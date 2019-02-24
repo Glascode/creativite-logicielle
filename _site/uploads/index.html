@@ -49,21 +49,28 @@
     main {
         display: flex;
         flex-direction: column;
-        padding: 1rem;
     }
 </style>
 
 <div class="flex-grow-1 flex-shrink-0">
-    <div class="gallery g-col-2">
+    <div class="gallery gallery-cards g-col-2">
         <a class="gallery-item-container" href="/dressapp/uploads/man">
             <img class="gallery-item screenshot"
                  src="/dressapp/images/man/screenshot.png">
         </a>
+        <a class="gallery-item-container"
+           href="/dressapp/uploads/woman">
+            <img class="gallery-item screenshot"
+                 src="/dressapp/images/woman/screenshot.png">
+        </a>
     </div>
 </div>
 
-<a class="btn btn-gradient btn-block mt-auto"
-   href="/dressapp/upload">Ajouter une photo</a>
+<div class="p-3">
+    <a class="btn btn-gradient btn-block mt-auto"
+       href="/dressapp/upload">Ajouter une photo</a>
+</div>
+
 </main>
 
 <div class="tab-bar">

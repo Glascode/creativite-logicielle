@@ -13,18 +13,24 @@ tab: uploads
     main {
         display: flex;
         flex-direction: column;
-        padding: 1rem;
     }
 </style>
 
 <div class="flex-grow-1 flex-shrink-0">
-    <div class="gallery g-col-2">
+    <div class="gallery gallery-cards g-col-2">
         <a class="gallery-item-container" href="{{ site.baseurl}}/uploads/man">
             <img class="gallery-item screenshot"
                  src="{{ site.baseurl }}/images/man/screenshot.png">
         </a>
+        <a class="gallery-item-container"
+           href="{{ site.baseurl}}/uploads/woman">
+            <img class="gallery-item screenshot"
+                 src="{{ site.baseurl }}/images/woman/screenshot.png">
+        </a>
     </div>
 </div>
 
-<a class="btn btn-gradient btn-block mt-auto"
-   href="{{ site.baseurl }}/upload">Ajouter une photo</a>
+<div class="p-3">
+    <a class="btn btn-gradient btn-block mt-auto"
+       href="{{ site.baseurl }}/upload">Ajouter une photo</a>
+</div>

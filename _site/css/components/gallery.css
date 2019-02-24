@@ -13,6 +13,11 @@
     border-top: 1px solid #fff;
 }
 
+.gallery.gallery-cards {
+    padding: 1rem;
+    grid-gap: .5rem;
+}
+
 .gallery.g-col-2 {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -28,6 +33,11 @@
     padding-top: 100%;
 }
 
+.gallery-cards .gallery-item-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .gallery-item {
     position: absolute;
     top: 0;
@@ -38,5 +48,9 @@
 }
 
 .gallery-item.screenshot {
-    object-position: 0 20%;
+    object-position: 0 35%;
+}
+
+.gallery-cards .gallery-item {
+    border-radius: 5px;
 }
