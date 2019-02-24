@@ -1,43 +1,13 @@
 ---
 layout: default
-title: Recherches récentes
+title: Mes photos
 permalink: /uploads
 tab: uploads
 ---
 
-<header class="header">
-    <button class="material-icons text-body text-decoration-none"
-            onclick="window.history.back()">
-        arrow_back
-    </button>
-    <h5 class="m-0">Mes recherches</h5>
-    <a class="text-decoration-none active"
-       href="{{ site.baseurl }}/">Accueil</a>
-</header>
+<div class="p-3 text-center" style="margin-top: 25vh;">
+    <h5 class="mb-3">Pas de photos actuellement.</h5>
+    <p class="mb-5 px-5 text-muted">Les photos que vous ajoutez apparaissent ici.</p>
 
-<form class="form-inline mb-4"
-      style="border-bottom: 1px solid #eee">
-    <input class="p-3 border-0 w-100"
-           placeholder="Rechercher dans l'historique">
-</form>
-
-<h4 class="mx-3 mb-3">Dernière recherche</h4>
-
-<div class="gallery-item-container mb-4">
-    <img class="gallery-item"
-         src="{{ site.baseurl }}/images/blue_shirt.jpg">
-</div>
-
-<h4 class="mx-3 mb-3">Recherches récentes</h4>
-
-<div class="gallery">
-    {% for picture in site.data.gallery %}
-    <div class="gallery-item-container">
-        <img class="gallery-item js-gallery-item"
-             src="{{ site.baseurl }}/images/{{ picture.url }}"
-             data-target-label="{{ picture.target.label }}"
-             data-target-top="{{ picture.target.top }}"
-             data-target-left="{{ picture.target.left }}">
-    </div>
-    {% endfor %}
+    <a class="btn btn-gradient" href="{{ site.baseurl }}/upload">Ajouter une photo</a>
 </div>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mes photos - DressApp</title>
+    <title>Ajouter - DressApp</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -32,18 +32,12 @@
 
 <body ontouchstart="">
 <header class="header">
-    <h5 class="m-0">Mes photos</h5>
+    <h5 class="m-0">Ajouter</h5>
 </header>
 
 
 <main class="content">
-    <div class="p-3 text-center" style="margin-top: 25vh;">
-    <h5 class="mb-3">Pas de photos actuellement.</h5>
-    <p class="mb-5 px-5 text-muted">Les photos que vous ajoutez apparaissent ici.</p>
-
-    <a class="btn btn-gradient" href="/dressapp/upload">Ajouter une photo</a>
-</div>
-
+    
 </main>
 
 <div class="tab-bar">
@@ -51,14 +45,14 @@
         
         
         
-        <a class="tab-item active" href="/dressapp/uploads">
+        <a class="tab-item" href="/dressapp/uploads">
             <i class="material-icons tab-icon">image</i>
             <div class="tab-caption">Mes photos</div>
         </a>
         
         
         
-        <a class="tab-item" href="/dressapp/upload">
+        <a class="tab-item active" href="/dressapp/upload">
             <i class="material-icons tab-icon">add_box</i>
             <div class="tab-caption">Ajouter</div>
         </a>
@@ -74,6 +68,9 @@
 </div>
 
 
+
+<!-- Specific page script -->
+<script src="/dressapp/js/gallery.js"></script>
 
 
 </body>

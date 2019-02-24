@@ -1,5 +1,8 @@
 :root {
     --primary: #24b4a5;
+    --secondary: #8fedc2;
+    --tertiary: #fdd741;
+    --light: #f4f3ed;
 }
 
 html {
@@ -10,6 +13,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
     -webkit-tap-highlight-color: transparent; /* disable tap highlighting */
     -webkit-touch-callout: none; /* disable callouts */
+    padding-top: 57px; /* header height */
     padding-bottom: 100px; /* tab-bar height */
 }
 
@@ -17,6 +21,45 @@ button {
     padding: 0;
     border: none;
     background-color: transparent;
+}
+
+input {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+input:focus {
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a.active {
+    font-weight: 600;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--primary), var(--tertiary));
+    background: -webkit-linear-gradient(90deg, var(--primary), var(--tertiary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient {
+    color: #fff;
+    background: linear-gradient(0deg, var(--secondary), var(--tertiary));
+    background: -webkit-linear-gradient(0deg, var(--secondary), var(--tertiary));
+    border: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .08);
+}
+
+.btn-gradient:hover {
+    color: #fff;
+    background: linear-gradient(0deg, var(--primary), var(--secondary));
+    background: -webkit-linear-gradient(0deg, var(--primary), var(--secondary));
 }
 
 .status-bar {
@@ -33,45 +76,16 @@ button {
 }
 
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    left: 0;
+    width: 100%;
     padding: 1rem;
     font-size: 1.1rem;
+    text-align: center;
     background-color: #fff;
     border-bottom: 1px solid #aaa;
     z-index: 10;
-}
-
-a.active {
-    font-weight: 600;
-}
-
-.btn-add {
-    --size: 125px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--size);
-    height: var(--size);
-    border: 2px solid currentColor;
-    border-radius: 50%;
-    transition: box-shadow .15s;
-}
-
-.btn-add:hover {
-    text-decoration: none;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, .25);
-}
-
-.btn-add i {
-    font-size: 3rem;
-}
-
-img {
-    max-width: 100%;
 }
 
 .card {
@@ -100,23 +114,13 @@ img {
     border-bottom-right-radius: .44rem;
 }
 
-input {
-    -webkit-appearance: none;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-input:focus {
-    outline: 0;
-}
-
 /* Tab bar */
 
 .tab-bar {
     position: fixed;
     left: 0;
     bottom: 0;
-    padding: .8rem 2rem 2rem;
+    padding: .6rem 2rem 2rem;
     width: 100%;
     border-top: 1px solid #ddd;
     background-color: #fff;
