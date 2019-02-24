@@ -1,0 +1,18 @@
+---
+layout: default
+title: Ajouter
+permalink: /add
+style: index
+tab: upload
+---
+
+<h4 class="m-3">Bibliothèque photos</h4>
+
+<div class="gallery">
+    {% for image in site.data.gallery %}
+    <div class="gallery-item-container">
+        <img class="gallery-item"
+             src="{{ site.baseurl }}/images/gallery/{{ image.src }}">
+    </div>
+    {% endfor %}
+</div>
