@@ -11,10 +11,11 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
-    -webkit-tap-highlight-color: transparent; /* disable tap highlighting */
-    -webkit-touch-callout: none; /* disable callouts */
     padding-top: 57px; /* header height */
     padding-bottom: 100px; /* tab-bar height */
+    -webkit-tap-highlight-color: transparent; /* disable tap highlighting */
+    -webkit-touch-callout: none; /* disable callouts */
+    -webkit-user-select: none; /* disable text selection */
 }
 
 button {
