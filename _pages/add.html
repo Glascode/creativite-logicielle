@@ -10,9 +10,9 @@ tab: upload
 
 <div class="gallery">
     {% for image in site.data.gallery %}
-    <div class="gallery-item-container">
+    <a class="gallery-item-container" href="{{ site.baseurl }}{{ image.href }}">
         <img class="gallery-item"
              src="{{ site.baseurl }}/images/gallery/{{ image.src }}">
-    </div>
+    </a>
     {% endfor %}
 </div>
