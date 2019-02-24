@@ -1,5 +1,6 @@
 :root {
     --primary: #24b4a5;
+    --primary-dark: #1b867b;
     --secondary: #8fedc2;
     --tertiary: #fdd741;
     --light: #f4f3ed;
@@ -42,9 +43,13 @@ a {
     color: var(--primary);
 }
 
+a:hover {
+    color: var(--primary-dark);
+}
+
 .text-gradient {
-    background: linear-gradient(90deg, var(--primary), var(--tertiary));
-    background: -webkit-linear-gradient(90deg, var(--primary), var(--tertiary));
+    background: linear-gradient(0deg, var(--primary), var(--tertiary));
+    background: -webkit-linear-gradient(0deg, var(--primary), var(--tertiary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -104,9 +109,14 @@ a {
 
 /* Nav */
 
+.nav-link {
+    padding: .3rem .8rem;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    background-color: var(--primary);
+    background: linear-gradient(0deg, var(--secondary), var(--tertiary));
+    background: -webkit-linear-gradient(0deg, var(--secondary), var(--tertiary));
 }
 
 /* Cards */
