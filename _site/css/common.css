@@ -38,8 +38,8 @@ img {
     max-width: 100%;
 }
 
-a.active {
-    font-weight: 600;
+a {
+    color: var(--primary);
 }
 
 .text-gradient {
@@ -64,7 +64,6 @@ a.active {
 }
 
 .status-bar {
-    /*display: none !important;*/
     position: sticky;
     top: 0;
     line-height: 1;
@@ -75,6 +74,8 @@ a.active {
 .status-bar i {
     font-size: 15px;
 }
+
+/* Header */
 
 .header {
     position: fixed;
@@ -100,6 +101,15 @@ a.active {
 .header-item:first-child {
     text-align: left;
 }
+
+/* Nav */
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: var(--primary);
+}
+
+/* Cards */
 
 .card {
     border-radius: .5rem;

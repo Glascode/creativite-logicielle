@@ -55,6 +55,14 @@
     }
 </style>
 
+<div class="px-5 text-center" style="margin-top: 20vh;">
+    <h4 class="mb-4">Bienvenue sur DressApp&nbsp;</h4>
+    <p class="text-muted">Ajoutez des photos pour retrouver les références de
+        vos vêtements favoris !</p>
+
+    <button class="btn btn-gradient btn-block mt-5">Ajouter une photo</button>
+</div>
+
 </main>
 
 <div class="tab-bar">
@@ -85,8 +93,16 @@
 </div>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/dressapp/js/lib/bootstrap.bundle.min.js"></script>
 
-
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            trigger: 'manual'
+        }).tooltip('show');
+    })
+</script>
 </body>
 
 </html>

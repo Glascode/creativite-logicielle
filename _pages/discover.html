@@ -1,18 +1,23 @@
 ---
-layout: default
+layout: discover
 title: Découvrir
 permalink: /discover
 tab: discover
+nav: brands
 ---
 
-<div class="gallery g-col-2">
-    {% for picture in site.data.gallery %}
-    <div class="gallery-item-container">
-        <img class="gallery-item js-gallery-item"
-             src="{{ site.baseurl }}/images/{{ picture.url }}"
-             data-target-label="{{ picture.target.label }}"
-             data-target-top="{{ picture.target.top }}"
-             data-target-left="{{ picture.target.left }}">
+<div class="p-3">
+    {% for brand in site.data.discover.brands %}
+    <div class="mb-4">
+        <h6 class="text-uppercase">{{ brand.title }}</h6>
+        <div class="gallery">
+            {% for item in brand.items %}
+            <div class="gallery-item-container">
+                <img class="gallery-item"
+                     src="{{ site.baseurl }}/images/discover/brands/{{ item.image }}">
+            </div>
+            {% endfor %}
+        </div>
     </div>
     {% endfor %}
 </div>

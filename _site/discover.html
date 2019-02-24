@@ -41,49 +41,65 @@
 
 
 <main class="content">
-    <div class="gallery g-col-2">
+    <nav class="nav nav-pills p-3 justify-content-between">
     
-    <div class="gallery-item-container">
-        <img class="gallery-item js-gallery-item"
-             src="/dressapp/images/blue_shirt.jpg"
-             data-target-label="Chemise"
-             data-target-top="35%"
-             data-target-left="60%">
+    
+    
+    <a class="nav-link active" href="/dressapp/discover">Marques</a>
+    
+    
+    
+    <a class="nav-link" href="/dressapp/discover">Tenues</a>
+    
+    
+    
+    <a class="nav-link" href="/dressapp/discover">Tendances</a>
+    
+</nav>
+
+<div class="p-3">
+    
+    <div class="mb-4">
+        <h6 class="text-uppercase">Hollister</h6>
+        <div class="gallery">
+            
+            <div class="gallery-item-container">
+                <img class="gallery-item"
+                     src="/dressapp/images/discover/brands/hollister1.jpg">
+            </div>
+            
+            <div class="gallery-item-container">
+                <img class="gallery-item"
+                     src="/dressapp/images/discover/brands/gray_shirt.jpg">
+            </div>
+            
+            <div class="gallery-item-container">
+                <img class="gallery-item"
+                     src="/dressapp/images/discover/brands/green_shirt.jpg">
+            </div>
+            
+        </div>
     </div>
     
-    <div class="gallery-item-container">
-        <img class="gallery-item js-gallery-item"
-             src="/dressapp/images/gray_shirt.jpg"
-             data-target-label="Chemise"
-             data-target-top="55%"
-             data-target-left="35%">
-    </div>
-    
-    <div class="gallery-item-container">
-        <img class="gallery-item js-gallery-item"
-             src="/dressapp/images/green_shirt.jpg"
-             data-target-label="Chemise"
-             data-target-top="70%"
-             data-target-left="65%">
-    </div>
-    
-    <div class="gallery-item-container">
-        <img class="gallery-item js-gallery-item"
-             src="/dressapp/images/green_tshirt.jpg"
-             data-target-label="T-Shirt"
-             data-target-top="60%"
-             data-target-left="50%">
-    </div>
-    
-    <div class="gallery-item-container">
-        <img class="gallery-item js-gallery-item"
-             src="/dressapp/images/denim_jacket.jpg"
-             data-target-label="Veste"
-             data-target-top="50%"
-             data-target-left="40%">
+    <div class="mb-4">
+        <h6 class="text-uppercase">Zara</h6>
+        <div class="gallery">
+            
+            <div class="gallery-item-container">
+                <img class="gallery-item"
+                     src="/dressapp/images/discover/brands/green_tshirt.jpg">
+            </div>
+            
+            <div class="gallery-item-container">
+                <img class="gallery-item"
+                     src="/dressapp/images/discover/brands/denim_jacket.jpg">
+            </div>
+            
+        </div>
     </div>
     
 </div>
+
 
 </main>
 
@@ -115,8 +131,16 @@
 </div>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/dressapp/js/lib/bootstrap.bundle.min.js"></script>
 
-
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            trigger: 'manual'
+        }).tooltip('show');
+    })
+</script>
 </body>
 
 </html>

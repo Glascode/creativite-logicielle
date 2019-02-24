@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<nav class="nav nav-pills p-3 justify-content-between">
+    {% for item in site.data.nav %}
+    {% assign class = "" %}
+    {% if item.id == page.nav %}
+    {% assign class = " active" %}
+    {% endif %}
+    <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+    {% endfor %}
+</nav>
+
+{{ content }}

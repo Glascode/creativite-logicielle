@@ -7,7 +7,7 @@ return: true
 ---
 
 <div class="p-3">
-    {% for item in site.data.results_man %}
+    {% for item in site.data.results_woman %}
     <a class="card flex-row mb-3 text-body">
         <div class="card-body">
             <h6 class="card-title mb-1 text-truncate">{{ item.title }}</h6>
@@ -18,7 +18,7 @@ return: true
         </div>
         <div class="card-image-container">
             <img class="card-image"
-                 src="{{ site.baseurl }}/images/man/{{ item.image }}">
+                 src="{{ site.baseurl }}/images/woman/{{ item.image }}">
         </div>
     </a>
     {% endfor %}
