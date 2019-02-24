@@ -36,3 +36,7 @@
     width: 100%;
     object-fit: cover;
 }
+
+.gallery-item.screenshot {
+    object-position: 0 20%;
+}

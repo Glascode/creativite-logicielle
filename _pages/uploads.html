@@ -1,13 +1,30 @@
 ---
 layout: default
 title: Mes photos
-permalink: /uploads
+permalink: /uploads/
 tab: uploads
 ---
 
-<div class="p-3 text-center" style="margin-top: 25vh;">
-    <h5 class="mb-3">Pas de photos actuellement.</h5>
-    <p class="mb-5 px-5 text-muted">Les photos que vous ajoutez apparaissent ici.</p>
+<style>
+    html, body, main {
+        height: 100%;
+    }
 
-    <a class="btn btn-gradient" href="{{ site.baseurl }}/upload">Ajouter une photo</a>
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+</style>
+
+<div class="flex-grow-1 flex-shrink-0">
+    <div class="gallery g-col-2">
+        <a class="gallery-item-container" href="{{ site.baseurl}}/uploads/man">
+            <img class="gallery-item screenshot"
+                 src="{{ site.baseurl }}/images/man/screenshot.png">
+        </a>
+    </div>
 </div>
+
+<a class="btn btn-gradient btn-block mt-auto"
+   href="{{ site.baseurl }}/upload">Ajouter une photo</a>

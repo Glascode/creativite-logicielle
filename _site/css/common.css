@@ -11,10 +11,11 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding-top: 57px; /* header height */
+    padding-bottom: 89px; /* tab-bar height */
     -webkit-tap-highlight-color: transparent; /* disable tap highlighting */
     -webkit-touch-callout: none; /* disable callouts */
-    padding-top: 57px; /* header height */
-    padding-bottom: 100px; /* tab-bar height */
+    -webkit-user-select: none; /* disable text selection */
 }
 
 button {
@@ -80,6 +81,8 @@ a.active {
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
     padding: 1rem;
     font-size: 1.1rem;
     text-align: center;
@@ -88,13 +91,27 @@ a.active {
     z-index: 10;
 }
 
+.header-item:first-child,
+.header-item:last-child {
+    -webkit-flex-basis: 20%;
+    flex-basis: 20%;
+}
+
+.header-item:first-child {
+    text-align: left;
+}
+
 .card {
     border-radius: .5rem;
 }
 
+.card-body {
+    width: 70%;
+}
+
 .card-image-container {
     position: relative;
-    width: 116px;
+    width: 30%;
 }
 
 .card-image-container::before {
@@ -144,7 +161,7 @@ a.active {
 
 .tab-icon {
     font-size: 1.8rem;
-    margin-bottom: .2rem;
+    margin-bottom: .1rem;
 }
 
 .tab-caption {
