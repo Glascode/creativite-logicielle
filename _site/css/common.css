@@ -56,16 +56,16 @@ a:hover {
 
 .btn-gradient {
     color: #fff;
-    background: linear-gradient(0deg, var(--secondary), var(--tertiary));
-    background: -webkit-linear-gradient(0deg, var(--secondary), var(--tertiary));
+    background: linear-gradient(45deg, var(--tertiary), var(--secondary));
+    background: -webkit-linear-gradient(45deg, var(--tertiary), var(--secondary));
     border: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, .08);
 }
 
 .btn-gradient:hover {
     color: #fff;
-    background: linear-gradient(0deg, var(--primary), var(--secondary));
-    background: -webkit-linear-gradient(0deg, var(--primary), var(--secondary));
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
 }
 
 .status-bar {
@@ -115,8 +115,8 @@ a:hover {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    background: linear-gradient(0deg, var(--secondary), var(--tertiary));
-    background: -webkit-linear-gradient(0deg, var(--secondary), var(--tertiary));
+    background: linear-gradient(45deg, var(--tertiary), var(--secondary));
+    background: -webkit-linear-gradient(45deg, var(--tertiary), var(--secondary));
 }
 
 /* Cards */
