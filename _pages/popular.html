@@ -7,11 +7,11 @@ nav: popular
 ---
 
 <div class="p-3">
-    {% for brand in site.data.discover.popular %}
+    {% for category in site.data.discover.popular %}
     <div class="mb-4">
-        <h5 class="text-uppercase">{{ brand.title }}</h5>
+        <h5 class="text-uppercase">{{ category.title }}</h5>
         <div class="gallery">
-            {% for item in brand.items %}
+            {% for item in category.items %}
             <div class="gallery-item-container">
                 <img class="gallery-item"
                      src="{{ site.baseurl }}/images/discover/popular/{{ item.image }}">

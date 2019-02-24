@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Découvrir - DressApp</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+    <link rel="apple-touch-startup-image" href="images/launch.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/dressapp/webmanifest.json">
+
+    <link rel="icon" type="image/png"
+          href="images/favicon.png">
+
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" type="text/css"
+          href="/dressapp/css/main.css">
+
+    
+</head>
+
+
+<body ontouchstart="">
+<header class="header">
+    
+    <div class="header-item"></div>
+    
+    <h5 class="header-item m-0 flex-grow-1">Découvrir</h5>
+    <div class="header-item"></div>
+</header>
+
+
+<main class="content">
+    <nav class="nav nav-pills p-3 justify-content-between">
+    
+    
+    
+    <a class="nav-link" href="/dressapp/discover">Marques</a>
+    
+    
+    
+    <a class="nav-link active" href="/dressapp/outfits">Tenues</a>
+    
+    
+    
+    <a class="nav-link" href="/dressapp/popular">Populaire</a>
+    
+</nav>
+
+<div class="p-3">
+    <h5 class="text-uppercase">Tenues</h5>
+    <div class="gallery">
+        
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="/dressapp/images/discover/outfits/outfit01.jpg">
+        </div>
+        
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="/dressapp/images/discover/outfits/outfit02.jpg">
+        </div>
+        
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="/dressapp/images/discover/outfits/outfit03.jpg">
+        </div>
+        
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="/dressapp/images/discover/outfits/outfit04.jpg">
+        </div>
+        
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="/dressapp/images/discover/outfits/outfit05.jpg">
+        </div>
+        
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="/dressapp/images/discover/outfits/outfit06.jpg">
+        </div>
+        
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="/dressapp/images/discover/outfits/outfit07.jpg">
+        </div>
+        
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="/dressapp/images/discover/outfits/outfit08.jpg">
+        </div>
+        
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="/dressapp/images/discover/outfits/outfit09.jpg">
+        </div>
+        
+    </div>
+</div>
+
+
+</main>
+
+<div class="tab-bar">
+    <div class="d-flex justify-content-between">
+        
+        
+        
+        <a class="tab-item" href="/dressapp/uploads/">
+            <i class="material-icons tab-icon">image</i>
+            <div class="tab-caption">Mes photos</div>
+        </a>
+        
+        
+        
+        <a class="tab-item" href="/dressapp/">
+            <i class="material-icons tab-icon">add_box</i>
+            <div class="tab-caption">Ajouter</div>
+        </a>
+        
+        
+        
+        <a class="tab-item active" href="/dressapp/discover">
+            <i class="material-icons tab-icon">search</i>
+            <div class="tab-caption">Découvrir</div>
+        </a>
+        
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/dressapp/js/lib/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            trigger: 'manual'
+        }).tooltip('show');
+    })
+</script>
+</body>
+
+</html>

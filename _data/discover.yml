@@ -34,3 +34,13 @@ popular:
       - image: 'shirt04.jpg'
       - image: 'shirt05.jpg'
       - image: 'shirt06.jpg'
+outfits:
+  - image: 'outfit01.jpg'
+  - image: 'outfit02.jpg'
+  - image: 'outfit03.jpg'
+  - image: 'outfit04.jpg'
+  - image: 'outfit05.jpg'
+  - image: 'outfit06.jpg'
+  - image: 'outfit07.jpg'
+  - image: 'outfit08.jpg'
+  - image: 'outfit09.jpg'

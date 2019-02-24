@@ -1,0 +1,19 @@
+---
+layout: discover
+title: Découvrir
+permalink: /outfits
+tab: discover
+nav: outfits
+---
+
+<div class="p-3">
+    <h5 class="text-uppercase">Tenues</h5>
+    <div class="gallery">
+        {% for outfit in site.data.discover.outfits %}
+        <div class="gallery-item-container">
+            <img class="gallery-item"
+                 src="{{ site.baseurl }}/images/discover/outfits/{{ outfit.image }}">
+        </div>
+        {% endfor %}
+    </div>
+</div>
