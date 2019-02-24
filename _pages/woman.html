@@ -8,7 +8,7 @@ return: true
 
 <div class="p-3">
     {% for item in site.data.results_woman %}
-    <a class="card flex-row mb-3 text-body">
+    <a class="card flex-row mb-3 text-body" href="{{ item.link }}">
         <div class="card-body">
             <h6 class="card-title mb-1 text-truncate">{{ item.title }}</h6>
             <p class="small mb-3 font-weight-normal text-uppercase">{{ item.brand }}</p>
