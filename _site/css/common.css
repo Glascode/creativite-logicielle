@@ -68,18 +68,6 @@ a:hover {
     background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
 }
 
-.status-bar {
-    position: sticky;
-    top: 0;
-    line-height: 1;
-    background-color: #eee;
-}
-
-.status-bar,
-.status-bar i {
-    font-size: 15px;
-}
-
 /* Header */
 
 .header {
