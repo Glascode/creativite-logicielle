@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
-    padding-top: 57px; /* header height */
+    padding-top: calc(57px + 44px); /* header height */
     padding-bottom: 89px; /* tab-bar height */
     -webkit-tap-highlight-color: transparent; /* disable tap highlighting */
     -webkit-touch-callout: none; /* disable callouts */
@@ -69,22 +69,21 @@ a:hover {
 }
 
 .status-bar {
-    position: sticky;
+    position: fixed;
     top: 0;
-    line-height: 1;
-    background-color: #eee;
-}
-
-.status-bar,
-.status-bar i {
-    font-size: 15px;
+    width: 100%;
+    height: 44px;
+    background-image: url('/dressapp/images/status_bar.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Header */
 
 .header {
     position: fixed;
-    top: 0;
+    top: 44px;
     left: 0;
     width: 100%;
     display: flex;
