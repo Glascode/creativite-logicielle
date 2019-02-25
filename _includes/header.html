@@ -6,6 +6,13 @@
             <i class="material-icons d-block">arrow_back_ios</i>
         </a>
     </div>
+    {% elsif page.cancel %}
+    <div class="header-item">
+        <a class="text-decoration-none"
+           href="{{ site.baseurl }}{{ page.cancel }}">
+            Annuler
+        </a>
+    </div>
     {% else %}
     <div class="header-item"></div>
     {% endif %}

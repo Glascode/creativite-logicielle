@@ -1,5 +1,5 @@
 .picture-preview-container {
-    position: relative; /* for the target to be positioned */
+    position: relative;
 }
 
 .picture-preview-img {
@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2px;
-    border-top: 1px solid #fff;
+    border-top: 2px solid #fff;
 }
 
 .gallery.gallery-cards {
@@ -24,7 +24,7 @@
 
 .gallery-item-container {
     position: relative;
-    background-color: #fff;
+    background-color: #eee;
 }
 
 .gallery-item-container::before {

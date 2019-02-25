@@ -4,16 +4,48 @@ title: Ajouter
 permalink: /add
 style: index
 tab: upload
-back: /
+cancel: /
+script: gallery
 ---
 
-<h4 class="m-3">Bibliothèque photos</h4>
+<header class="header">
+    <div class="header-item">
+        <a class="text-body text-decoration-none"
+           href="{{ site.baseurl }}{{ page.cancel }}">
+            Annuler
+        </a>
+    </div>
+    <h5 class="header-item m-0 flex-grow-1">Bibliothèque</h5>
+    <div class="header-item">
+        <a class="text-decoration-none js-next-link"
+           href="{{ site.baseurl }}/uploads/man">
+            Résultats
+        </a>
+    </div>
+</header>
+
+<div class="gallery-item-container">
+    <img class="gallery-item js-picture-preview-img"
+         src="{{ site.baseurl }}/images/gallery/01.png">
+</div>
 
 <div class="gallery">
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="{{ site.baseurl }}/images/gallery/01.png"
+             data-href="{{ site.baseurl }}/uploads/man">
+    </div>
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="{{ site.baseurl }}/images/gallery/02.png"
+             data-href="{{ site.baseurl }}/uploads/woman">
+    </div>
+
     {% for image in site.data.gallery %}
-    <a class="gallery-item-container" href="{{ site.baseurl }}{{ image.href }}">
-        <img class="gallery-item"
-             src="{{ site.baseurl }}/images/gallery/{{ image.src }}">
-    </a>
+    <div class="gallery-item-container">
+        <img class="gallery-item js-gallery-item"
+             src="{{ site.baseurl }}/images/gallery/{{ image.src }}"
+             data-href="">
+    </div>
     {% endfor %}
 </div>
