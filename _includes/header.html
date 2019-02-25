@@ -1,8 +1,10 @@
 <header class="header">
-    {% if page.return %}
+    {% if page.back %}
     <div class="header-item">
-        <a class="material-icons d-block text-body text-decoration-none"
-           href="{{ site.baseurl }}/uploads/">arrow_back_ios</a>
+        <a class="text-body text-decoration-none"
+           href="{{ site.baseurl }}/uploads/">
+            <i class="material-icons d-block">arrow_back_ios</i>
+        </a>
     </div>
     {% else %}
     <div class="header-item"></div>
