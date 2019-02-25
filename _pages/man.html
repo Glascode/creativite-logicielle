@@ -7,9 +7,16 @@ back: /uploads/
 ---
 
 <div class="p-3">
+    <div>
+        <img class="w-100 mb-4"
+             src="{{ site.baseurl }}/images/man/screenshot_square.png">
+    </div>
+
     <h5 class="mb-3">Éléments trouvés</h5>
 
-    {% for item in site.data.results_man %}
+    {% for category in site.data.results_man %}
+    <h6 class="mt-4 mb-2 text-uppercase">{{ category.title }}</h6>
+    {% for item in category.items %}
     <a class="card flex-row mb-3 text-body" href="{{ item.link }}">
         <div class="card-body">
             <h6 class="card-title mb-1 text-truncate">{{ item.title }}</h6>
@@ -23,5 +30,6 @@ back: /uploads/
                  src="{{ site.baseurl }}/images/man/{{ item.image }}">
         </div>
     </a>
+    {% endfor %}
     {% endfor %}
 </div>
